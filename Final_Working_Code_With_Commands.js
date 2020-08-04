@@ -24,7 +24,7 @@ function os_func() {
         exec(cmd, (error, stdout, stderr) => {
             if (error) {
                 console.error(`exec error: ${error}`);
-                //Print the error to browser incase of command issue
+                //Print the error to browser incase of command issues
                 response.writeHead(200,
                     {"Content-Type" : "text/html"});
                     response.end(stderr);
